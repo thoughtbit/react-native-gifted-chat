@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 Send.defaultProps = {
   text: '',
   onSend: () => {},
-  label: 'Send',
+  label: '发送',
   containerStyle: {},
   textStyle: {},
 };
