@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
 LoadEarlier.defaultProps = {
   onLoadEarlier: () => {},
   isLoadingEarlier: false,
-  label: 'Load earlier messages',
+  label: '历史聊天记录',
   containerStyle: {},
   wrapperStyle: {},
   textStyle: {},
