@@ -35,19 +35,19 @@ const styles = StyleSheet.create({
   container: {
     height: 44,
     justifyContent: 'flex-end',
+    backgroundColor: '#0084ff',
+    borderRadius: 6,
   },
   text: {
     color: '#fff',
     fontWeight: '600',
     fontSize: 14,
-    backgroundColor: '#0084ff',
+    backgroundColor: 'transparent',
     marginBottom: 12,
     marginLeft: 10,
     marginRight: 10,
-    paddingLeft: 6,
-    paddingRight: 6,
-    paddingTop: 2,
-    paddingBottom: 2,
+    alignSelf: 'center',
+    textAlign: 'center',
   },
 });
 
