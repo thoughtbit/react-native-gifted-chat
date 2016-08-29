@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   text: {
-    color: '#0084ff',
+    color: '#fff',
     fontWeight: '600',
-    fontSize: 17,
-    backgroundColor: 'transparent',
+    fontSize: 16,
+    backgroundColor: '#0084ff',
     marginBottom: 12,
     marginLeft: 10,
     marginRight: 10,
