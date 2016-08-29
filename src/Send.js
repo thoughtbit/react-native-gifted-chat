@@ -33,19 +33,21 @@ export default class Send extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    height: 44,
+    height: 28,
     justifyContent: 'flex-end',
-    backgroundColor: '#0084ff',
-    borderRadius: 6,
+    backgroundColor: '#ff616f',
+    borderRadius: 20,
+    marginRight: 5,
+    marginBottom: 8,
   },
   text: {
     color: '#fff',
     fontWeight: '600',
     fontSize: 14,
     backgroundColor: 'transparent',
-    marginBottom: 12,
-    marginLeft: 10,
-    marginRight: 10,
+    marginBottom: 5,
+    marginLeft: 8,
+    marginRight: 8,
     alignSelf: 'center',
     textAlign: 'center',
   },
