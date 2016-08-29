@@ -39,11 +39,15 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
     fontWeight: '600',
-    fontSize: 16,
+    fontSize: 14,
     backgroundColor: '#0084ff',
     marginBottom: 12,
     marginLeft: 10,
     marginRight: 10,
+    paddingLeft: 6,
+    paddingRight: 6,
+    paddingTop: 2,
+    paddingBottom: 2,
   },
 });
 
