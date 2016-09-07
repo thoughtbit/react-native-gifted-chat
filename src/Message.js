@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Text,
   View,
   StyleSheet,
 } from 'react-native';
@@ -72,7 +73,12 @@ export default class Message extends React.Component {
         isSameDay: this.isSameDay,
       };
 
-      return <Avatar {...avatarProps}/>;
+      return (
+        <View>
+          <Avatar {...avatarProps}/>
+          <Text style={styles['avatar'].name}>{this.props.currentMessage.user.name}</Text>
+        </View>
+      );
     }
     return null;
   }
@@ -111,6 +117,14 @@ const styles = {
       marginLeft: 0,
       marginRight: 8,
     },
+  }),
+  avatar: StyleSheet.create({
+    name: {
+      width: 36,
+      fontSize: 10,
+      textAlign: 'center',
+      color: '#666'
+    }
   }),
 };
 

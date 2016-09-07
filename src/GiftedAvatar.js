@@ -129,7 +129,7 @@ const defaultStyles = {
     borderRadius: 20,
   },
   textStyle: {
-    color: '#fff',
+    color: '#000',
     fontSize: 16,
     backgroundColor: 'transparent',
     fontWeight: '100',
