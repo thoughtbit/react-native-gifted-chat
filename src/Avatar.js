@@ -22,6 +22,8 @@ export default class Avatar extends React.Component {
   }
 
   render() {
+    /*
+    // 去掉相同头像判断
     if (this.props.isSameUser(this.props.currentMessage, this.props.nextMessage) && this.props.isSameDay(this.props.currentMessage, this.props.nextMessage)) {
       return (
         <View style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
@@ -31,6 +33,7 @@ export default class Avatar extends React.Component {
         </View>
       );
     }
+    */
     return (
       <View style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
         {this.renderAvatar()}
