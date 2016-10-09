@@ -23,8 +23,8 @@ export default class MessageText extends React.Component {
 
   onPhonePress(phone) {
     const options = [
-      '文本',
       '呼叫',
+      '短信',
       '取消',
     ];
     const cancelButtonIndex = options.length - 1;
