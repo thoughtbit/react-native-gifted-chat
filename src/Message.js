@@ -121,9 +121,10 @@ const styles = {
   avatar: StyleSheet.create({
     name: {
       width: 36,
+      lineHeight: 18,
       fontSize: 10,
       textAlign: 'center',
-      color: '#666'
+      color: '#aaa',
     }
   }),
 };
