@@ -63,6 +63,7 @@ class GiftedChat extends React.Component {
     this.onKeyboardDidHide = this.onKeyboardDidHide.bind(this);
     this.onType = this.onType.bind(this);
     this.onSend = this.onSend.bind(this);
+    this.onWorkAction = this.onWorkAction.bind(this);
     this.getLocale = this.getLocale.bind(this);
 
     this.invertibleScrollViewProps = {
@@ -300,6 +301,10 @@ class GiftedChat extends React.Component {
     );
   }
 
+  onWorkAction(messages = []){
+    alert(messages)
+  }
+
   onSend(messages = [], shouldResetInputToolbar = false) {
     if (!Array.isArray(messages)) {
       messages = [messages];
@@ -472,6 +477,8 @@ GiftedChat.defaultProps = {
   loadEarlier: false,
   onLoadEarlier: () => {
   },
+  onWorkAction: () => {
+  },
   locale: null,
   isAnimated: Platform.select({
     ios: true,
@@ -504,6 +511,7 @@ GiftedChat.propTypes = {
   onSend: React.PropTypes.func,
   loadEarlier: React.PropTypes.bool,
   onLoadEarlier: React.PropTypes.func,
+  onWorkAction: React.PropTypes.func,
   locale: React.PropTypes.string,
   isAnimated: React.PropTypes.bool,
   renderAccessory: React.PropTypes.func,

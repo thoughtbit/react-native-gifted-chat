@@ -76,6 +76,7 @@ export default class Bubble extends React.Component {
     } else {
       if (this.props.currentMessage.text) {
         const options = [
+          '转发成工作决定',
           '复制文本',
           '取消',
         ];
@@ -87,7 +88,9 @@ export default class Bubble extends React.Component {
         (buttonIndex) => {
           switch (buttonIndex) {
             case 0:
-              Clipboard.setString(this.props.currentMessage.text);
+              this.props.onWorkAction(this.props.currentMessage._id)
+            case 1:
+              Clipboard.setString(this.props.currentMessage.text)
               break;
           }
         });
